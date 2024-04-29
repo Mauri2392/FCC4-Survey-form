@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <h1 id="title">Deportes que practican las personas</h1>
+    <p id="description">Gracias por ser parte de este articulo</p>
+
+ <form id="survey-form">
+  <div class="input-element"> 
+   <label id="name-label">
+     Nombre
+   </label>
+   <input placeholder="nombre" id="name" type="text" required/>
+  </div>
+
+  <div class="input-element"> 
+   <label id="email-label">
+     Email 
+   </label>
+   <input placeholder="email" id="email" type="email" required/>
+  </div>
+
+  <div class="input-element"> 
+   <label id="number-label">
+     Edad
+   </label>
+   <input placeholder="edad" id="number" min="15" max="99" type="number" required/>
+  </div> 
+
+  <div class="input-element"> 
+   <label id="select-label">
+     Cual es tu deporte favorito?
+   </label>
+   <select id="dropdown">
+     <option>Futbol</option>
+     <option>Basquet</option>
+     <option>Tenis</option>
+   </select>
+  </div>
+  <div class="input-element">
+    <label>Has practicado algun deporte anteriormente?</label>
+    <div>
+      <label><input type="radio" name="Deporte" value="Si"/>Si</label>
+    </div>
+    <div>
+      <label><input type="radio" name="Deporte" value="no"/>No</label>
+    </div>
+  </div> 
+
+  <div class="input-element">
+    <label>Cual te gustaria practicar?</label>
+    <div>
+      <label><input type="checkbox" name="ideas" value="futbol"/>Futbol</label>
+    </div>
+    <div>
+      <label><input type="checkbox" name="ideas" value="basquet"/>Basquet</label>
+    </div>
+     <div>
+      <label><input type="checkbox" name="ideas" value="tenis"/>Tenis</label>
+    </div>
+    <div>
+      <label><input type="checkbox" name="ideas" value="otro"/>Otro</label>
+    </div>
+  </div>
+
+  <div class="input-element">
+    <label>Comentarios Adicionales</label>
+    <textarea type="text"></textarea>
+  </div>
+  <button type="submit" id="submit">
+    Submit
+  </button>
+  
+
+ </form>
+</body>
+</html>
